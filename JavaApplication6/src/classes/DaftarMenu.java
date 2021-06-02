@@ -9,6 +9,18 @@ package classes;
  *
  * @author Acer
  */
+
+import java.util.ArrayList;
+
 public class DaftarMenu {
+    private ArrayList<Menu> daftarMenu;
+            
+        public DaftarMenu() { }
+            
+        public void tambahMenu(Menu menu) { }
+            
+        public void getMenuByKetegori(String kategori) { }
+            
+        public void tampilDaftarMenu() { }
     
 }

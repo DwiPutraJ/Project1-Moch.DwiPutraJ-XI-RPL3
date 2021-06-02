@@ -9,6 +9,12 @@ package classes;
  *
  * @author Acer
  */
-public class Toping {
+public class Toping extends Menu{
+    
+    public Toping(String nama_toping, double harga) {
+        setNama_menu(nama_toping);
+        setHarga(harga);
+        setKetegori("Toping");
+    }
     
 }

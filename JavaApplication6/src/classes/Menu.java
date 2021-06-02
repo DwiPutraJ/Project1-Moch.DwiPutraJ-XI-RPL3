@@ -7,7 +7,7 @@ package classes;
 
 /**
  *
- * @author Acer
+ * @author AcerS
  */
 public class Menu {
     private String nama_menu;
@@ -17,7 +17,7 @@ public class Menu {
     
     public String getNama_menu() {
         return nama_menu;
-    }
+}
     
     public void setNama_menu(String nama_menu) {
         this.nama_menu = nama_menu;
@@ -35,7 +35,7 @@ public class Menu {
         return kategori;
     }
     
-    public void setKategoi (String kategori) {
+    public void setKetegoi (String kategori) {
         this.kategori = kategori;
     }
     
