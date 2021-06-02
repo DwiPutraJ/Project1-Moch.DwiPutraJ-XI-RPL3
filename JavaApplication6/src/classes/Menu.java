@@ -10,5 +10,33 @@ package classes;
  * @author Acer
  */
 public class Menu {
+    private String nama_menu;
+    private double harga;
+    private String kategori;
+    
+    
+    public String getNama_menu() {
+        return nama_menu;
+    }
+    
+    public void setNama_menu(String nama_menu) {
+        this.nama_menu = nama_menu;
+    }
+    
+    public double getharga() {
+        return harga;
+    }
+    
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+    
+    public String getKategori() {
+        return kategori;
+    }
+    
+    public void setKategoi (String kategori) {
+        this.kategori = kategori;
+    }
     
 }
