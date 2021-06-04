@@ -17,5 +17,9 @@ public class Ramen extends Menu{
         setKetegori("Ramen");
     }
 
+    private void setKetegori(String ramen) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
 }

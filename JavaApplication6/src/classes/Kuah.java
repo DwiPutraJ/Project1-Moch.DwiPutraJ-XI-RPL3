@@ -16,5 +16,9 @@ public class Kuah extends Menu{
         setHarga(0);
         setKetegori("Kuah");
     }
+
+    private void setKetegori(String kuah) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

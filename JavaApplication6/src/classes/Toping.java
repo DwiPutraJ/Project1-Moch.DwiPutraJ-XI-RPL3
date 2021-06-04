@@ -16,5 +16,9 @@ public class Toping extends Menu{
         setHarga(harga);
         setKetegori("Toping");
     }
+
+    private void setKetegori(String toping) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

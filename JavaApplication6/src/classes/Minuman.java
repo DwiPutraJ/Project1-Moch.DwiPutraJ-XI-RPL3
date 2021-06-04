@@ -16,5 +16,9 @@ public class Minuman extends Menu{
         setHarga(harga);
         setKetegori("Minuman");
     }
+
+    private void setKetegori(String minuman) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
