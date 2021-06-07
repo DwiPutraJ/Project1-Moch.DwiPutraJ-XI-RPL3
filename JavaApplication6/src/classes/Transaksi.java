@@ -22,13 +22,25 @@ public class Transaksi {
     private double pajak;
     private double totalBayar;
     
-    public Transaksi(String no_transaksi, String nm_pmrsan, String tanggal, String no_menja) { }
+    private double biayaService=0;
     
-    public void tambahPesanan(Pesanan pesanan) { }
+    public Transaksi(String no_transaksi, String nm_pemesan, String tanggal, String no_meja) {
+        this.noTransaksi = no_transaksi;
+        this.namaPemesan = nm_pemesan;
+        this.tanggal = tanggal;
+        this.noMeja = no_meja;
+        
+        pesanan = new ArrayList<>();
+    }
     
-    public Pesanan getPesanan() { return null; }
+    public void tambahPesanan(Pesanan pesanan) {
+        this.pesanan.add(pesanan);
+    }
     
-    public ArrayList<Pesanan> getSemuaPesanan() { return null; }
+    
+    public ArrayList<Pesanan> getSemuaPesanan() {
+        return pesanan;
+    }
     
     public double hitungTotalBayar() { return 0; }
     

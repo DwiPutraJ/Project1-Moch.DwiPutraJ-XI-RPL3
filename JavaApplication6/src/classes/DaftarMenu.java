@@ -11,6 +11,8 @@ package classes;
  */
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class DaftarMenu {
     private ArrayList<Menu> daftarMenu;
@@ -42,5 +44,50 @@ public class DaftarMenu {
         getMenuByKetegori("Toping");
         getMenuByKetegori("Minuman");
     }
+        
+        public Menu pilihMenu(){
+        try{
+            Scanner input = new Scanner(System.in);
+            
+            System.out.print("Nomor Menu yang dipesan : ");
+            int no_menu = input.nextInt();
+            
+            Menu m = daftarMenu.get(no_menu-1);
+            
+            if(!m.getKategori().equalsIgnoreCase("Kuah")){
+                return m;
+            }else{
+                System.out.println("[Err] Pesan dulu Menu Ramen");
+                return pilihMenu();
+            }
+        }catch(InputMismatchException err){
+            System.out.println("[Err] Mohon masukkan nomor menu");
+            return pilihMenu();
+        }
+    }
     
+    public Menu pilihKuah(){
+        try{
+            Scanner input = new Scanner(System.in);
+            
+            System.out.print("Kuah [sesuai nomor menu] : ");
+            int no_menu = input.nextInt();
+            
+            Menu m = daftarMenu.get(no_menu-1);
+            
+            if(m.getKategori().equalsIgnoreCase("Kuah")){
+                return m;                    
+            }else{
+                System.out.println("[Err] Pesanan Tidak Tersedia");
+                return pilihKuah();
+                }
+        }catch(IndexOutOfBoundsException err){
+            
+            System.out.println("[Err] Pesanan Tidak Tersedia");
+            return pilihKuah();
+        }catch(InputMismatchException err){
+            System.out.println("[Err] Mohon masukkan nomor kuah");
+            return pilihKuah();
+        }
+    }
 }
