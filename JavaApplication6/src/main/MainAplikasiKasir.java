@@ -50,7 +50,7 @@ public class MainAplikasiKasir {
                 System.out.print("Nomor Meja : ");
                 no_meja = input.next();
             }
-        }     
+             
         Transaksi trans = new Transaksi(no_transaksi, nama_pemesan, tanggal, no_meja);
             System.out.println("======= PESANAN =======");
             int no_kuah;
